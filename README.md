@@ -4,7 +4,7 @@ go-noby-api is wrapper library "noby api(cotogo)".
 
 ## Install
 ```
-go get -u github.com/wusamin/go-iws600cm
+go get -u github.com/wusamin/go-noby-api
 ```
 
 ## Usage
