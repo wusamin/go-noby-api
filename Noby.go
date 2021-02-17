@@ -9,6 +9,7 @@ import (
 
 const URL = "https://app.cotogoto.ai/webapi/noby.json"
 
+// Call calls noby API.
 func Call(req *NobyRequest) (*NobyResponse, error) {
 	request, err := http.NewRequest("GET", URL, nil)
 

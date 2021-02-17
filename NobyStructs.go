@@ -3,12 +3,13 @@ package main
 type Persona string
 
 const (
-	normal         Persona = "0"
+	Normal         Persona = "0"
 	TsundereFemale Persona = "1"
 	TsundereMale   Persona = "2"
 	God                    = "3"
 )
 
+// NobyRequest represents request parameters of noby API.
 type NobyRequest struct {
 	Appkey  string
 	Mail    string
@@ -21,6 +22,7 @@ type NobyRequest struct {
 	Ending  string
 }
 
+// NobyResponse represents response of noby API.
 type NobyResponse struct {
 	CommandId    string     `json:"commandId"`
 	CommandName  string     `json:"commandName"`
@@ -41,11 +43,13 @@ type NobyResponse struct {
 	Tim          string     `json:"tim"`
 }
 
+// Negaposi represents value of "Negaposi".
 type Negaposi struct {
 	Word  string  `json:"word"`
 	Score float64 `json:"score"`
 }
 
+// Emotion represents value of "Emotion".
 type Emotion struct {
 	Word        string  `json:"word"`
 	LikeDislike float64 `json:"likeDislike"`
@@ -53,6 +57,7 @@ type Emotion struct {
 	AngerFear   float64 `json:"angerFear"`
 }
 
+// Word represents value of "Word".
 type Word struct {
 	Feature string `json:"feature"`
 	Start   string `json:"start"`
