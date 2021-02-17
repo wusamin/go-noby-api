@@ -1,4 +1,4 @@
-package main
+package nobyapi
 
 import (
 	"encoding/json"
