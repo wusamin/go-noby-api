@@ -1,5 +1,5 @@
 # go-noby-api
-go-noby-api is wrapper library "noby api(cotogo)".
+go-noby-api is golang library of noby api(cotogo).
 > https://www.cotogoto.ai/
 
 ## Install
@@ -17,4 +17,5 @@ req.Persona = Normal
 
 // "Call" returns API response. It is a bound struct.
 res, err := Call(&req)
+...
 ```
